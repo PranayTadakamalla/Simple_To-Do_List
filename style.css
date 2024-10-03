@@ -1,0 +1,166 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a90e2;
+  padding: 15px;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.points,
+.tasks,
+.completed {
+  font-size: 18px;
+  padding: 5px 15px;
+}
+
+main {
+  margin-top: 1px;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.input {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.input-label {
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+.todos {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todos li {
+  background-color: #ce2020;
+  border: 2px solid #000000;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.todos li.completed {
+  background-color: #00923d;
+  text-decoration: line-through;
+  color: white;
+  border: 2px solid #000000;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.3);
+  margin-right: 10px;
+}
+
+unor {
+  color: #999;
+  font-size: 200px;
+  display: block;
+  margin-top: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+button.edit-btn,
+button.save-btn,
+button.cancel-btn,
+button.complete-btn,
+button.delete-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: white;
+}
+
+button.edit-btn:hover,
+button.save-btn:hover,
+button.cancel-btn:hover,
+button.complete-btn:hover,
+button.delete-btn:hover {
+  background-color: #357abd;
+}
+
+button.delete-btn {
+  background-color: #e74c3c;
+}
+
+button.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+button.complete-btn {
+  background-color: #2ecc71;
+}
+
+button.complete-btn:hover {
+  background-color: #27ae60;
+}

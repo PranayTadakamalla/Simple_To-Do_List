@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <header>
+      <h1>To-Do List</h1>
+      <div class="stats">
+        <div class="points" id="points">Points: 0</div>
+        <div class="tasks" id="taskCount">Tasks: 0</div>
+        <div class="completed" id="completedCount">Completed: 0</div>
+      </div>
+    </header>
+    <main>
+      <p>
+        A To-Do List is a simple organizational tool that allows users to keep
+        track of tasks and deadlines. Users can add, edit, complete, and delete
+        tasks, with features like deadlines and points for completed tasks. It
+        helps enhance productivity by providing a visual overview of what needs
+        to be accomplished.
+      </p>
+      <ul class="unor">
+        <li>To mark the task complete, check the box.</li>
+        <li>To delete the task, click the delete button.</li>
+      </ul>
+      <form id="form">
+        <div class="input-area">
+          <label for="input" class="input-label">Task:</label>
+          <input
+            type="text"
+            class="input"
+            id="input"
+            placeholder="Enter your todo"
+            autocomplete="off"
+          />
+          <label for="deadline" class="input-label">Deadline:</label>
+          <input type="datetime-local" id="deadline" />
+          <button type="submit">Add Task</button>
+        </div>
+        <ul class="todos" id="todos"></ul>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 Sai Pranay Tadakamalla. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
